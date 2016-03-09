@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interesting Articles</title>
+  </head>
+
+  <body>
+
+    <ul>
+
+      <% @all_articles.each do |article| %>
+        <li>
+            <%= article.title %>
+            <a href= <%= article.url %>> <%= article.url  %> </a>
+            <%= article.description %>
+      </li>
+      <% end %>
+
+    </ul>
+
+  </body>
+</html>
